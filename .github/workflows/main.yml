@@ -4,19 +4,12 @@ on:
       - master
 
 
-
-
-
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Testing action'
-        run: pwd
       
-      - name: 'Testing Printing'
-        run: echo AbdElrahman
+      - uses: actions/checkout@v3
 
 
 
