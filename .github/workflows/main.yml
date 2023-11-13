@@ -10,10 +10,7 @@ jobs:
     steps:
       
       - uses: actions/checkout@v3
-      - name: "login to docker"
-        run: docker login --username ${{ secrets.DOCKERUSERNAME }} --password-stdin ${{ secrets.DOCKERTOCKEN }}
-      - name: "bulding docker image"
-        run: docker build -t ${{ secrets.DOCKERUSERNAME }}/test .
+     
 
       
 
